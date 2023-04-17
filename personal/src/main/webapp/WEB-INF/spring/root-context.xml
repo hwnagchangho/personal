@@ -27,5 +27,9 @@
 		<property name="mapperLocations" value="classpath:mappers/**/*Mapper.xml"/>
 		<property name="configLocation" value="classpath:config/config.xml"/>
 	</bean>
+	
+	<context:component-scan base-package="com.personal.service"/>
+	<mybatis-spring:scan base-package="com.personal.mapper"/>
+	<context:component-scan base-package="com.personal.dao"/>
 
 </beans>
